@@ -129,6 +129,49 @@ let defaultColor = 'blue';
 let currentColor = userColor || defaultColor;
 console.log(currentColor);
 
+// 8. Bitwise Operators (Rarely used as mostly theorectical)
+
+// 1 = 00000001
+// 2 = 00000010
+// 3 = 00000011
+
+// Bitwise OR (|)
+console.log(1 | 2); // Bitwise OR
+// Result = 00000011
+
+// Bitwise AND (&)
+console.log(1 & 2); // Bitwise AND
+// Result = 00000000
+console.log(2 & 3); // Bitwise AND
+// Result = 00000010
+
+//---Example
+// Read, Write, Execute
+//00000100 (Only Read Permission) 
+//00000110 (Read and Write Permission)
+//00000111 (Read, Write and Execute Permission)
+
+const readPermission = 4; // =00000100
+const writePermission = 2; // =00000010
+const executePermission = 1; // =00000001
+
+let myPermission = 0;
+
+myPermission = myPermission | readPermission | writePermission;
+
+let message = (myPermission & readPermission) ? 'yes' : 'no'; // used ternary operator
+console.log(message);
+
+// 9. Operator Precedence
+
+// Operator precedence is the order in which the operations are performed in an expression
+
+let x1 = 2 + 3 * 4;
+console.log(x1);
+let x2 = (2 + 3) * 4;
+console.log(x2);
+
+
 
 
 
