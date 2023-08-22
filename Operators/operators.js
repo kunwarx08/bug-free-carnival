@@ -101,6 +101,40 @@ console.log('Application Refused', applicationRefused);
 
 // 7. Logical Operators with Non-booleans
 
+// Falsy (false) 
+//-------Following are some falsey value
+// undefined
+// null
+// 0
+// false
+// '' (empty string)
+// NaN (Not a Number)
+
+// Anything that is not Falsy -> Truthy
+
+//Examples
+false || true // true
+false || 'Mosh' 
+// Mosh is Truthy as it doesnt come under any of the falsy values
+false || 1 // 1
+// 1 is Truthy as it doesnt come under any of the falsy values
+
+// Short-circuiting
+false || 1 || 2 // 1
+// 1 is the first truthy value so it is returned and the rest of the values are ignored this is called short-circuiting
+
+// Real world example
+let userColor = undefined;
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+console.log(currentColor);
+
+
+
+
+
+
+
 
 
 
