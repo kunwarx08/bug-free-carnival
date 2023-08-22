@@ -63,4 +63,4 @@ function square(number){
 }
 console.log(square(2)); //we passed function as an argument to another function
 
-//Video 8 More about Funtions
+//Video 8 More about Functions
