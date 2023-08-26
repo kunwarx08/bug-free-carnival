@@ -18,3 +18,5 @@ switch(role) {
 if(role === 'guest') console.log('Guest User');
 else if(role === 'moderator') console.log('Moderator User');
 else console.log('Unknown User');
+
+// Looping
